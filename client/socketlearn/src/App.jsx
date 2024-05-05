@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import "./index.css"; // Import your CSS file
 
 function App(props) {
-  const socket = useMemo(() => io("http://localhost:3000"), []);
+  const socket = useMemo(() => io("https://simplechat-socket-io.onrender.com/"), []);
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
   const [room, setRoom] = useState("");
