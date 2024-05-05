@@ -6,7 +6,7 @@ import cors from "cors";
 const port = 3000;
 const app = express();
 const server = new createServer(app);
-const frontendOrigin = ["http://localhost:5173","https://simplechat-socket-io.vercel.app/"];
+const frontendOrigin = ["https://simplechat-socket-io.vercel.app"];
 const io = new Server(server, {
   cors: {
     origin: frontendOrigin,
